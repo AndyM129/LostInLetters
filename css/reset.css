@@ -1,0 +1,128 @@
+ @charset "utf-8";
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,textarea,p,blockquote,th,td,input,select,textarea,button,img{
+	padding: 0;
+	margin: 0;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	background: white;
+	height: 100%;
+}
+
+body,th,td,input,select,textarea,button {
+	font-family: "Arial, Helvetica, sans-serif", "微软雅黑";
+	font-size: 14px;
+	line-height: 1;
+}
+
+table {
+	border-collapse:collapse;
+}
+
+td{
+	text-align: center;
+	vertical-align: middle;
+}
+ 
+/************************************************************ 重置页面文字属性 ************************************************************/ 
+/* 短引用的内容可取值：''或"" */
+blockquote,q {
+	quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none
+}
+
+img {
+	vertical-align: top;
+	border: 0 none;
+}
+ 
+ 
+/* 重置嵌套引用的引号类型; 清除特殊标记的字体和字号 */
+address,caption,cite,code,dfn,em,strong,th,var {
+	font-weight: normal;
+	font-style: normal;
+}
+ 
+/* 重置样式标签的样式; 上下标 ; 统一上标和下标 */
+sub,sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+
+sup {
+	top: -0.5em;
+}
+
+sub {
+	bottom: -0.25em;
+}
+
+dl,ul,ol,menu,li {
+	list-style: none
+}
+
+input,button,textarea,select,optgroup,option {
+	font-family: inherit;
+	font-size: inherit;
+	font-style: inherit;
+	font-weight: inherit;
+}  
+input,select,textarea,button {
+	vertical-align: middle;
+	outline: none;
+}  
+textarea {
+	resize: none;
+}
+
+input[type="submit"] {
+	cursor: pointer;
+} 
+
+button {
+	border: 0 none;
+	background-color: transparent;
+	cursor: pointer
+}  
+
+input::-moz-focus-inner {
+	border: 0;
+	padding: 0;
+}
+
+/* 标题元素样式清除, 让标题都自定义, 适应多个系统应用 */
+h1,h2,h3,h4,h5,h6 {
+	font-size: 100%;
+	font-weight: normal;
+}
+
+/* 链接样式 */
+del,ins,a { color: #0074d9; text-decoration: none; outline: none; transition: color 0.2s ease 0s;}
+a:hover { text-decoration: underline; } 
+a:active { star: expression(this.onFocus = this.blur () ); }
+
+/* 设置页面文字等在拖动鼠标选中情况下的背景色与文字颜色
+::selection{color: red;background-color: yellow;}
+::-moz-selection{color: #fff;background-color: #4C6E78;}
+*/
+
+/* 层板块缓冲效果CSS3       transition: all 0.3s ease 0s;   */
+.clearfix {
+	zoom: 1
+}
+
+.clearfix:after {
+	content: '\20';
+	display: block;
+	clear: both;
+}

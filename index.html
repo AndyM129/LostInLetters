@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Lost In Letters 3.0</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="description" content="" />
+		<meta name="keywords" content=""  />
+		<link  href="./images/favicon.ico"  rel="shortcut icon">
+		<link rel="stylesheet" type="text/css" href="./css/reset.css">
+		<link rel="stylesheet" type="text/css" href="./css/common.css">
+		<link rel="stylesheet" type="text/css" href="./css/style.css">
+		<script type="text/javascript" src="./js/jquery.1.11.0.min.js"></script>
+		<script>
+			$(document).ready(function(){
+				$("#startupImg").fadeIn(2000,function(){
+					setTimeout(function(){
+						$("#startupImg").fadeOut(1000,function(){
+							$("#gameLoading").fadeIn(2000,function(){
+								setTimeout(function(){
+									location.href="play.html";
+								},1000);
+							});
+						});
+					},2000);
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<div id="startupImg"></div>
+		<!-- 
+		<div id="gameName">
+			<h1><em>LOST</em>_<em>IN</em>_<em>LETTERS</em></h1>
+		</div>
+		-->
+		<div id="gameLoading"></div>
+	</body>
+</html>

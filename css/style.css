@@ -1,0 +1,159 @@
+@CHARSET "UTF-8";
+
+body {
+	font-family: "微软雅黑", Helvetica, Arial, sans-serif;
+	color: white;
+	background-color: black;
+}
+
+#startupImg {
+	background-image: url("../images/startupImg.png");
+	background-color: white;
+	background-repeat:no-repeat;
+	background-position:50% 40%;
+	width: 100%;
+	height: 100%;
+	display: none;
+}
+#gameName h1{
+	font-size: 60px;
+	margin-top:200px;
+	text-align: center;
+}
+#gameName h1 em{
+	font-size: 60px;
+	margin-top:200px;
+	text-align: center;
+	color: #FF4B2D;
+}
+#gameLoading {
+	background-image: url("../images/gameLoading.gif");
+	background-color: #15191F;
+	background-repeat:no-repeat;
+	background-position:50% 40%;
+	width: 100%;
+	height: 100%;
+	display: none;
+}
+
+ 
+
+#mask {
+	display: none; 
+	position:fixed;
+	top: 0px;
+	left: 0px;
+	z-index: 10;
+	width: 100%;
+	height: 100%;
+	background: #000;
+}
+
+#setupPanel {
+	display: none;
+	position: fixed;
+	top: 5px;
+	right: 5px;
+	background-color: white;
+}
+
+#gamePanel {
+	width: 1200px;
+	height: 640px;
+	margin: 10px auto 0;
+}
+
+#gamePanel .scorePanel {
+	width: 230px;
+	height: 640px;
+	float: left;
+	border: 1px solid white;
+	position: relative;
+}
+
+#gamePanel .scorePanel h1 {
+	color: #AF321E;
+	font-size: 24px;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 50px;
+	line-height: 2em;
+}
+
+#gamePanel .scorePanel h2 {
+	font-size: 20px;
+	font-weight: bold;
+	margin-top: 50px;
+	margin-left: 5px;
+	line-height: 1.5em;
+}
+
+#gamePanel .scorePanel h2 p {
+	font-size: 35px;
+	text-align: center;
+}
+
+#gamePanel .scorePanel .button {
+	font-size: 20px;
+	display: block;
+	width: 96%;
+	line-height: 30px;
+	text-align: center;
+	cursor: pointer;
+	position: absolute;
+	bottom: 5px;
+	left: 5px;
+}
+
+#gamePanel .lettersPanel {
+	font-size: 0;
+	width: 960px;
+	height: 640px;
+	float: right;
+	border: 1px solid white;
+}
+
+#gamePanel .lettersPanel .letter {
+	display: inline-block;
+	cursor: pointer;
+	text-align: center;
+	line-height: 1em;
+}
+
+#gamePanel .level1 .letter {
+	width: .95em;
+	font-size: 24px;
+}
+
+#gamePanel .level2 .letter {
+	width: .75em;
+	font-size: 20px;
+}
+
+#gamePanel .level3 .letter {
+	width: .75em;
+	font-size: 18px;
+}
+
+/* 换色 - 白底黑字
+body.skin01 {
+	color: black;
+	background-color: white;
+}
+body.skin01 #gamePanel .scorePanel{
+	border-color:black;
+}
+body.skin01 #gamePanel .scorePanel{
+	border-color:black;
+}
+body.skin01 #gamePanel .scorePanel h1{
+	color:#AF321E;
+}
+body.skin01 #gamePanel .scorePanel .button:hover{
+	background-color: black;
+	color: white;
+}
+body.skin01 #gamePanel .lettersPanel{
+	border-color: black;
+}
+ */
